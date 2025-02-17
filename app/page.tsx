@@ -1,10 +1,12 @@
+import WhoIAm from "@/components/WhoIAm";
+
 export default function Home() {
   return (
     <div className="flex flex-col gap-4 p-5">
-      <div className="flex">
-        <div className="text-white">Who I am</div>
-        <div className="text-white">LinkedIn info</div>
-        <div className="text-white">Instagram info</div>
+      <div className="flex gap-4 ">
+        <WhoIAm />
+        <div className="text-white w-full">LinkedIn info</div>
+        <div className="text-white w-full">Instagram info</div>
       </div>
       <div className="flex">
         <div className="text-white">Education</div>
