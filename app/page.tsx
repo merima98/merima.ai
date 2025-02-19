@@ -2,6 +2,8 @@ import { Instagram, Linkedin } from "react-feather";
 
 import SocialNetworks from "@/components/SocialNetworks";
 import WhoIAm from "@/components/WhoIAm";
+import GetInTouch from "@/components/GetInTouch";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -15,9 +17,9 @@ export default function Home() {
           <Linkedin size={150} color="#1549e6" />
         </SocialNetworks>
       </div>
-      <div className="flex">
-        <div className="text-white">Education</div>
-        <div className="text-white">Get in touch with me</div>
+      <div className="flex gap-4">
+        <Experience />
+        <GetInTouch />
       </div>
       <div className="flex">
         <div className="text-white">Where do I live</div>
