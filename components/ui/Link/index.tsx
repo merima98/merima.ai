@@ -1,3 +1,5 @@
+"use client";
+
 import { AnchorHTMLAttributes, DetailedHTMLProps } from "react";
 
 export interface LinkProps
@@ -9,8 +11,12 @@ export interface LinkProps
 }
 
 const Link = (props: LinkProps) => {
-  const { children } = props;
-  return <a className="cursor-pointer text-white">{children}</a>;
+  const { children, href } = props;
+  return (
+    <a className="cursor-pointer text-white" href={href}>
+      {children}
+    </a>
+  );
 };
 
 export default Link;

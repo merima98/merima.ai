@@ -1,4 +1,5 @@
 "use client";
+
 import { DetailedHTMLProps, forwardRef, HTMLAttributes } from "react";
 
 export interface SocialNetworksProps
@@ -12,7 +13,7 @@ const SocialNetworks = forwardRef<HTMLDivElement, SocialNetworksProps>(
       <div
         ref={ref}
         {...rest}
-        className="flex w-full justify-center align-center p-5 border-2 border-gray-800 rounded-lg w-full cursor-pointer"
+        className="flex w-full justify-center align-center p-5 border-2 border-gray-800 rounded-lg w-full cursor-pointer items-center"
         onClick={() => window.open(link, "_blank")}
       >
         {children}
