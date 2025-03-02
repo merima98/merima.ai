@@ -24,7 +24,7 @@ export default function Home() {
         <Experience />
         <GetInTouch />
       </div>
-      <div className="flex">
+      <div className="flex gap-4 flex-col md:flex-row">
         <WhereDoILive />
         <Conference />
         <Hobies />
