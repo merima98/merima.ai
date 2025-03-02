@@ -10,7 +10,7 @@ import Hobies from "@/components/Hobies";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4 p-5 md:grid md:grid-rows-3 h-full">
+    <div className="flex flex-col gap-4 p-5 md:grid h-full">
       <div className="flex gap-4 flex-col md:flex-row">
         <WhoIAm />
         <SocialNetworks link="https://www.instagram.com/merii__lu/">
@@ -24,7 +24,7 @@ export default function Home() {
         <Experience />
         <GetInTouch />
       </div>
-      <div className="flex gap-4 flex-col md:flex-row">
+      <div className="flex flex-col gap-4 md:grid grid-cols-[2fr_0.7fr_1.5fr]">
         <WhereDoILive />
         <Conference />
         <Hobies />

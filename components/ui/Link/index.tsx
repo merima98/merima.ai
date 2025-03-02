@@ -7,7 +7,7 @@ export interface LinkProps
     AnchorHTMLAttributes<HTMLAnchorElement>,
     HTMLAnchorElement
   > {
-  icon?: any; // Type will be changed. I'll add option that link can have icon.
+  icon?: string;
 }
 
 const Link = (props: LinkProps) => {
